@@ -1,0 +1,23 @@
+; Stereopsis VR — stereoacuity test and depth-vision training for PC VR (OpenXR via SteamVR).
+; Godot 4.7.2, Mobile renderer. Entry point: the Keeper's Hut (scenes/capanna.tscn).
+config_version=5
+
+[application]
+config/name="Stereopsis VR"
+config/version="0.6.3-en"
+run/main_scene="res://scenes/capanna.tscn"
+config/features=PackedStringArray("4.7", "Mobile")
+
+[display]
+window/size/viewport_width=1600
+window/size/viewport_height=800
+
+[rendering]
+renderer/rendering_method="mobile"
+renderer/rendering_method.mobile="mobile"
+
+[xr]
+openxr/enabled=false
+openxr/enabled.vr_release=true
+openxr/default_action_map="res://openxr_action_map.tres"
+shaders/enabled=true

@@ -1,0 +1,7 @@
+_ref/
+.godot/
+risultati/
+results/
+*.import
+export/
+.local/
